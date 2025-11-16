@@ -1,4 +1,4 @@
-🌍 Real-Time Country & Weather Dashboard
+<h1>🌍 Real-Time Country & Weather Dashboard</h1>
 A dynamic and responsive web application that provides users with real-time country details and up-to-the-minute weather information for any location worldwide. Built using fundamental front-end technologies and integrated with external public APIs to deliver a seamless data experience.
 
 🚀 Features
