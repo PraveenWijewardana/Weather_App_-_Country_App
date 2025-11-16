@@ -21,7 +21,7 @@ CSS3: For styling and ensuring a responsive layout.
 
 JavaScript (ES6+): For all application logic, API calls, and dynamic content manipulation.
 
-Country Details API : (restcountries.com) - Used for fetching country-specific data.
+Country Details API : (restcountries.com) - Used for fetching country-specific data.<br>
 Weather API Name : (api.weatherapi.com) - Used for fetching real-time weather data.<br><br>
 <img width="1858" height="850" alt="Screenshot 2025-11-16 093849" src="https://github.com/user-attachments/assets/9f28f73c-6cf8-4315-a09a-f32e82b1d956" />
 <img width="1685" height="898" alt="Screenshot 2025-11-16 093747" src="https://github.com/user-attachments/assets/c79781bd-2626-4341-b432-709ed80dc027" />
