@@ -1,7 +1,7 @@
-<h1>🌍 Real-Time Country & Weather Dashboard</h1>
+<h1><center>🌍 Real-Time Country & Weather Dashboard</center></h1>
 A dynamic and responsive web application that provides users with real-time country details and up-to-the-minute weather information for any location worldwide. Built using fundamental front-end technologies and integrated with external public APIs to deliver a seamless data experience.
 
-🚀 Features
+<h2>🚀 Features</h2>
 Country Search: Find comprehensive details for any country, including its capital, population, region, languages, and flag.
 
 Real-Time Weather: Get the current temperature, weather conditions, wind speed, and humidity for the selected country's capital or any searched city.
@@ -12,7 +12,7 @@ Responsive Design: Optimized for viewing on desktop, tablet, and mobile devices 
 
 Intuitive Interface: A clean, user-friendly interface for easy navigation and data readability.
 
-🛠️ Built With
+<h2>🛠️ Built With</h2>
 This project was developed using the following technologies:
 
 HTML5: For the core structure of the web pages.
