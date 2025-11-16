@@ -1,0 +1,234 @@
+.container {
+     max-width: 900px;
+     margin: 24px auto;
+     padding: 0 16px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+     color: #222;
+}
+
+.page-header {
+     position: relative;
+     margin-bottom: 24px;
+}
+
+.back-link {
+     display: inline-block;
+     margin-bottom: 12px;
+     padding: 8px 12px;
+     background: #f0f0f0;
+     border-radius: 6px;
+     text-decoration: none;
+     color: #0b76ef;
+     font-size: 14px;
+     font-weight: 500;
+     transition: background 0.2s ease;
+}
+
+.back-link:hover {
+     background: #e0e0e0;
+}
+
+.page-header h1 {
+     text-align: center;
+     margin-bottom: 18px;
+}
+
+.search-row {
+     display: flex;
+     gap: 8px;
+     justify-content: center;
+     margin-bottom: 18px;
+}
+
+.search-row input[type="text"] {
+     flex: 1 1 320px;
+     padding: 10px 12px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+}
+
+.search-row button {
+     padding: 10px 14px;
+     font-size: 16px;
+     background: #0b76ef;
+     color: white;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+}
+
+.results .card {
+     display: flex;
+     gap: 16px;
+     align-items: center;
+     padding: 12px;
+     border-radius: 8px;
+     background: #f8f9fb;
+     box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.flag {
+     width: 120px;
+     height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.flag img {
+     max-width: 100%;
+     max-height: 100%;
+     display: block;
+}
+
+.details h2 {
+     margin: 0 0 6px 0;
+}
+
+.map-wrapper {
+     margin-top: 14px;
+}
+
+.google-map {
+     width: 100%;
+     height: 420px;
+     background: #e9edf3;
+     border-radius: 6px;
+     overflow: hidden;
+}
+
+.google-map iframe {
+     width: 100%;
+     height: 100%;
+     border: 0;
+     display: block;
+}
+
+@media (max-width: 560px) {
+     .results .card {
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+     .flag {
+          width: 100%;
+          height: auto;
+     }
+}
+
+.info-grid {
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+     gap: 8px 16px;
+     margin-top: 8px;
+}
+
+.info-row {
+     font-size: 14px;
+}
+
+.links {
+     margin-top: 10px;
+     display: flex;
+     gap: 10px;
+}
+
+.links a {
+     text-decoration: none;
+     color: #0b76ef;
+     background: transparent;
+}
+
+.secondary {
+     display: flex;
+     gap: 16px;
+     margin-top: 12px;
+     align-items: center;
+}
+
+.coat img {
+     max-width: 160px;
+     max-height: 160px;
+     display: block;
+}
+
+.updated {
+     font-size: 13px;
+     color: #666;
+}
+
+@media (max-width: 560px) {
+     .info-grid { grid-template-columns: 1fr; }
+     .secondary { flex-direction: column; align-items: flex-start; }
+}
+
+.weather-section {
+     margin-top: 20px;
+     padding: 16px;
+     background: #f0f8ff;
+     border-radius: 8px;
+     border-left: 4px solid #0b76ef;
+}
+
+.weather-section h3 {
+     margin: 0 0 12px 0;
+}
+
+.weather-card {
+     display: flex;
+     gap: 16px;
+     align-items: center;
+     margin-bottom: 12px;
+}
+
+.weather-icon {
+     font-size: 48px;
+     line-height: 1;
+}
+
+.weather-main {
+     display: flex;
+     flex-direction: column;
+     gap: 4px;
+}
+
+.temp {
+     font-size: 28px;
+     font-weight: bold;
+     color: #0b76ef;
+}
+
+.condition {
+     font-size: 14px;
+     color: #666;
+}
+
+.weather-details {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 12px;
+     margin-top: 12px;
+}
+
+.weather-row {
+     display: flex;
+     justify-content: space-between;
+     padding: 8px;
+     background: rgba(255, 255, 255, 0.5);
+     border-radius: 4px;
+     font-size: 14px;
+}
+
+.weather-row .label {
+     font-weight: 600;
+}
+
+.weather-row .value {
+     color: #0b76ef;
+}
+
+@media (max-width: 560px) {
+     .weather-details { grid-template-columns: 1fr; }
+     .weather-card { flex-direction: column; align-items: flex-start; }
+}

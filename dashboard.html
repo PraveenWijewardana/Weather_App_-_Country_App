@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>🌍 Global Dashboard</h1>
+            <p class="subtitle">Explore countries, weather & more</p>
+        </header>
+
+        <nav class="dashboard-nav">
+            <div class="nav-grid">
+                <a href="index.html" class="nav-card country-card">
+                    <div class="card-icon">🗺️</div>
+                    <h2>Country Search</h2>
+                    <p>Explore country details, capitals, currencies, timezones, and more</p>
+                    <span class="arrow">→</span>
+                </a>
+
+                <div class="nav-card weather-card">
+                    <div class="card-icon">🌤️</div>
+                    <h2>Weather Info</h2>
+                    <p>Check weather conditions and forecasts for any location</p>
+                    <span class="arrow">→</span>
+                    <a href="weather.html" style="position: absolute; inset: 0; z-index: 1;"></a>
+                </div>
+
+                <div class="nav-card stats-card">
+                    <div class="card-icon">📊</div>
+                    <h2>Global Stats</h2>
+                    <p>View statistics about countries worldwide</p>
+                    <span class="arrow">→</span>
+                    <div class="coming-soon">Coming Soon</div>
+                </div>
+
+                <div class="nav-card favorites-card">
+                    <div class="card-icon">⭐</div>
+                    <h2>Favorites</h2>
+                    <p>Save and manage your favorite countries</p>
+                    <span class="arrow">→</span>
+                    <div class="coming-soon">Coming Soon</div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="dashboard-features">
+            <h2>Features</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Search and explore detailed country information</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">View real-time local time for any country</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Interactive maps and geographic data</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Weather information and conditions</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Languages, currencies, and trade information</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span class="feature-text">Population and area statistics</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 Global Dashboard. All rights reserved.</p>
+            <p class="footer-note">Data powered by REST Countries & Weather APIs</p>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="page-header">
+            <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+            <h1>Country Search</h1>
+        </div>
+
+        <form id="search-form" onsubmit="searchcon(); return false;" class="search-row">
+            <input type="text" id="country-input" placeholder="Type a country name..." aria-label="Country name">
+            <button id="search-button" type="submit">Search</button>
+        </form>
+
+        <section id="results" class="results">
+            <div class="card">
+                <div class="flag" id="country-flag">No flag</div>
+                <div class="details">
+                    <h2 id="country-name">-</h2>
+                    <div class="info-grid">
+                        <div class="info-row"><strong>Region:</strong> <span id="country-info">-</span></div>
+                        <div class="info-row"><strong>Subregion:</strong> <span id="country-subregion">-</span></div>
+                        <div class="info-row"><strong>Capital:</strong> <span id="country-capital">-</span></div>
+                        <div class="info-row"><strong>Population:</strong> <span id="country-population">-</span></div>
+                        <div class="info-row"><strong>Area:</strong> <span id="country-area">-</span></div>
+                        <div class="info-row"><strong>Languages:</strong> <span id="country-languages">-</span></div>
+                        <div class="info-row"><strong>Currencies:</strong> <span id="country-currencies">-</span></div>
+                        <div class="info-row"><strong>Timezones:</strong> <span id="country-timezones">-</span></div>
+                        <div class="info-row"><strong>Local time:</strong> <span id="country-localtime">-</span></div>
+                        <div class="info-row"><strong>TLD:</strong> <span id="country-tld">-</span></div>
+                        <div class="info-row"><strong>Calling code:</strong> <span id="country-calling">-</span></div>
+                        <div class="info-row"><strong>Independent:</strong> <span id="country-independent">-</span></div>
+                        <div class="info-row"><strong>UN Member:</strong> <span id="country-un">-</span></div>
+                    </div>
+
+                    <div class="links">
+                        <a id="country-wiki" href="#" target="_blank" rel="noopener">Wikipedia</a>
+                        <a id="country-maps" href="#" target="_blank" rel="noopener">OpenStreetMap</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-wrapper">
+                <div class="google-map" aria-label="Country map">Map will appear here</div>
+            </div>
+
+            <div class="secondary">
+                <div class="coat" id="country-coat">Coat of arms</div>
+                <div class="updated" id="last-updated">Last updated: -</div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

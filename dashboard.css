@@ -1,0 +1,228 @@
+.dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.dashboard-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    margin: 0;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+.dashboard-nav {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-card {
+    position: relative;
+    padding: 32px 24px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.nav-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.nav-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-icon {
+    font-size: 3em;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.nav-card h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.nav-card p {
+    margin: 0 0 16px 0;
+    font-size: 0.95em;
+    opacity: 0.9;
+    flex: 1;
+    line-height: 1.5;
+}
+
+.arrow {
+    font-size: 1.5em;
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+
+.nav-card:hover .arrow {
+    transform: translateX(4px);
+}
+
+.country-card {
+    border-color: rgba(76, 175, 80, 0.3);
+    background: rgba(76, 175, 80, 0.05);
+}
+
+.country-card:hover {
+    background: rgba(76, 175, 80, 0.15);
+}
+
+.weather-card {
+    border-color: rgba(255, 193, 7, 0.3);
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.weather-card:hover {
+    background: rgba(255, 193, 7, 0.15);
+}
+
+.stats-card {
+    border-color: rgba(33, 150, 243, 0.3);
+    background: rgba(33, 150, 243, 0.05);
+}
+
+.stats-card:hover {
+    background: rgba(33, 150, 243, 0.15);
+}
+
+.favorites-card {
+    border-color: rgba(244, 67, 54, 0.3);
+    background: rgba(244, 67, 54, 0.05);
+}
+
+.favorites-card:hover {
+    background: rgba(244, 67, 54, 0.15);
+}
+
+.coming-soon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dashboard-features {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-features h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.feature-icon {
+    font-size: 1.5em;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.feature-text {
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.dashboard-footer {
+    padding: 24px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashboard-footer p {
+    margin: 4px 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.footer-note {
+    font-size: 0.85em !important;
+    opacity: 0.6 !important;
+}
+
+@media (max-width: 768px) {
+    .dashboard-header h1 {
+        font-size: 2em;
+    }
+
+    .nav-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-nav,
+    .dashboard-features {
+        padding: 24px 16px;
+    }
+
+    .dashboard-header {
+        padding: 24px 16px;
+    }
+}

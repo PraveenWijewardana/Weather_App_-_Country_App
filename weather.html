@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weather-page.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="page-header">
+            <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+            <h1>Weather Information</h1>
+        </div>
+
+        <div id="weather-search-form" class="search-row">
+            <input type="text" id="weather-location-input" placeholder="Enter city or country name..." aria-label="Location">
+            <button id="weather-search-button" onclick="load()">Search Weather</button>
+        </div>
+
+        <section id="weather-results" class="weather-results">
+            <section class="weather-section">
+                <h3>Weather Details</h3>
+                <div class="weather-card">
+                    <div class="weather-icon" id="weather-icon">☁️</div>
+                    <div class="weather-main">
+                        <div class="temp" id="weather-temp">--°C</div>
+                        <div class="condition" id="weather-condition">Enter a location to see weather</div>
+                        <div class="location" id="weather-location">-</div>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="weather-row">
+                        <span class="label">Humidity:</span>
+                        <span class="value" id="weather-humidity">--%</span>
+                    </div>
+                    <div class="weather-row">
+                        <span class="label">Wind Speed:</span>
+                        <span class="value" id="weather-wind">-- m/s</span>
+                    </div>
+                    <div class="weather-row">
+                        <span class="label">Pressure:</span>
+                        <span class="value" id="weather-pressure">-- hPa</span>
+                    </div>
+                    <div class="weather-row">
+                        <span class="label">Feels Like:</span>
+                        <span class="value" id="weather-feels">--°C</span>
+                    </div>
+                    <div class="weather-row">
+                        <span class="label">Visibility:</span>
+                        <span class="value" id="weather-visibility">-- km</span>
+                    </div>
+                    <div class="weather-row">
+                        <span class="label">UV Index:</span>
+                        <span class="value" id="weather-uv">--</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <script src="weather-script.js"></script>
+    </main>
+</body>
+
+</html>

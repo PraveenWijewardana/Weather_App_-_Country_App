@@ -1,0 +1,136 @@
+.weather-results {
+    margin-top: 24px;
+}
+
+#weather-search-form {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+#weather-search-form input[type="text"] {
+    flex: 1 1 320px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#weather-search-form button {
+    padding: 10px 14px;
+    font-size: 16px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#weather-search-form button:hover {
+    background: #e68900;
+}
+
+.weather-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+    border-radius: 8px;
+    border-left: 4px solid #ff9800;
+}
+
+.weather-section h3 {
+    margin: 0 0 16px 0;
+    color: #333;
+}
+
+.weather-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+.weather-icon {
+    font-size: 56px;
+    line-height: 1;
+    min-width: 60px;
+    text-align: center;
+}
+
+.weather-main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.temp {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.condition {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+
+.location {
+    font-size: 14px;
+    color: #888;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.weather-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.weather-row .label {
+    font-weight: 600;
+    color: #333;
+}
+
+.weather-row .value {
+    color: #ff9800;
+    font-weight: 500;
+}
+
+.weather-error {
+    padding: 16px;
+    background: #ffebee;
+    border-left: 4px solid #f44336;
+    border-radius: 6px;
+    color: #c62828;
+    margin-top: 16px;
+}
+
+@media (max-width: 560px) {
+    .weather-details {
+        grid-template-columns: 1fr;
+    }
+
+    .weather-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .weather-icon {
+        width: 100%;
+        text-align: center;
+    }
+}
